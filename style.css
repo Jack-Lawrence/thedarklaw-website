@@ -19,6 +19,8 @@
   body {
     height: 100vh;
     background-color: #000;
+    background-size: 40px 40px;
+    background-image: radial-gradient(circle, rgba(237, 51, 64, .2) 1px, rgba(0, 0, 0, 1) 1px);
   }
 
 
@@ -61,6 +63,46 @@
 
   .header__links p {
     opacity: 0;
+  }
+
+  .header__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  .header__nav a {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+   }
+
+  .header__nav .selected{
+    color: white;
+   }
+
+  .header__nav button {
+    all: unset;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    width: 128px;
+    height: 35px;
+    border-radius: 4px;
+    background-color: #ed3340;
+    transition: all 0.3s ease 0s;
+  }
+
+  .header__nav button:hover {
+    color: white;
+    box-shadow: 0 0 5px #ed3340,
+                 0 0 10px #ed3340
+
   }
 
   /* Test */
@@ -113,7 +155,7 @@
 /* Body CSS */
 
 .body__twitch {
-    margin-top: 75px;
+    margin-top: 40px;
     display: flex;
     align-items: center;
     justify-content: center;  
@@ -190,7 +232,9 @@
 
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 628px) {
+
+  /* Header CSS */
 
   .header__logo {
     width: 64px;
@@ -205,6 +249,14 @@
     height: 50px;
     letter-spacing: 10px;
   }
+
+  .header__nav button {
+    width: 96px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  /* Body CSS */
 
   .body__twitch iframe {
     width: 480px;
