@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheDarkLaw</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="icon" type="image/x-icon" href="images\favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1a831f6d78.js" crossorigin="anonymous"></script>
+</head>
+    <container class="site__container">
+        <body>
+            <header>
+                <div class="header__name"><span>THEDARKLAW</span></div>
+                <div class="header__links">
+                    <a href="https://discord.com/invite/JuGzyAA" target="_blank"><i class="fa-brands fa-discord animate__animated animate__fadeInRight animate__delay-1s"></i></a>
+                    <p>·</p>
+                    <a href="https://www.instagram.com/TheDarkLawTV/" target="_blank"><i class="fa-brands fa-instagram animate__animated animate__fadeInRight animate__delay-1s"></i></a>
+                    <p>·</p>
+                    <a href="https://www.tiktok.com/@thedarklawtv" target="_blank"><i class="fa-brands fa-tiktok animate__animated animate__fadeInRight animate__delay-1s"></i></a>
+                    <img class="header__logo animate__animated animate__fadeInUp animate__delay" src="images\logo.png">
+                    <a href="https://www.twitch.tv/thedarklaw" target="_blank"><i class="fa-brands fa-twitch animate__animated animate__fadeInLeft animate__delay-1s"></i></a>
+                    <p>·</p>
+                    <a href="https://twitter.com/TheDarkLawTV" target="_blank"><i class="fa-brands fa-twitter animate__animated animate__fadeInLeft animate__delay-1s"></i></a>
+                    <p>·</p>
+                    <a href="https://www.youtube.com/@TheDarkLawTV" target="_blank"><i class="fa-brands fa-youtube animate__animated animate__fadeInLeft animate__delay-1s"></i></a>
+                </div>
+            </header>
+            <div class="body__twitch animate__animated animate__fadeIn animate__delay-2s">
+                <div id="twitch-embed"></div>
+                <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+                <script type="text/javascript">
+                new Twitch.Player("twitch-embed", {
+                    channel: "thedarklaw"
+                });
+                </script>
+            </div>
+            <div class="content__splitter animate__animated animate__fadeInUp animate__delay-1s">
+                <p>↓ RECENT VIDEOS BELOW ↓</p>
+            </div>
+            <div class="body__youtube">
+                <iframe class="animate__animated animate__fadeIn animate__delay-1s" style="border:2px solid #ed3340;" src="https://www.youtube.com/embed?listType=playlist&list=UU3rScdAOsBYkg_ieRxca-yg&index=1"></iframe>
+                <iframe class="animate__animated animate__fadeIn animate__delay-1s" style="border:2px solid #ed3340;" src="https://www.youtube.com/embed?listType=playlist&list=UU3rScdAOsBYkg_ieRxca-yg&index=2"></iframe>
+                <iframe class="animate__animated animate__fadeIn animate__delay-1s" style="border:2px solid #ed3340;" src="https://www.youtube.com/embed?listType=playlist&list=UU3rScdAOsBYkg_ieRxca-yg&index=3"></iframe>
+            </div>
+        </body>
+        <footer>
+            <p class="footer__copyright">© TheDarklaw</p>
+        </footer>
+    </container>
+</html>

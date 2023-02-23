@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Teko:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  html::-webkit-scrollbar {
+    display: none;
+  }
+
+  body {
+    height: 100vh;
+    background-color: #000;
+  }
+
+
+  /* Header CSS */
+
+  .header__links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .header__logo {
+    max-width: 128px;
+    height: auto;
+  }
+
+  .header__links i {
+    text-decoration: none;
+    color: #ed3340;
+    font-weight: 500;
+    font-size: 24px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    margin: 20px;
+    padding: 0;
+  }
+
+  .header__links a:hover .fa-brands {
+    text-shadow: 0 0 10px #ed3340,
+                 0 0 20px #ed3340,
+                 0 0 40px #ed3340,
+                 0 0 80px #ed3340,
+                 0 0 160px #ed3340,
+                 0 0 320px #ed3340,
+                 0 0 640px #ed3340
+  }
+
+  .header__links p {
+    opacity: 0;
+  }
+
+  /* Test */
+  .header__name {
+    z-index: -1000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    letter-spacing: 20px;
+    justify-content: center;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 80px;
+    font-weight: 700;
+    text-align: center;
+    color: #000;
+    position: absolute;
+    margin-left: 10px;
+    width: 100%;
+    opacity: 20%;
+    height: 138px;
+    cursor: pointer;
+    animation: blink 8s infinite;
+  }
+  
+  span {
+    position: absolute;
+    top: 25%;
+  }
+    
+  
+  @keyframes blink {
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+      color: #000;
+      text-shadow: none;
+      box-shadow: none;
+    }
+    
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 100% {
+      color: #fa8b92;
+    text-shadow: 0 0 10px #ed3340,
+                 0 0 20px #ed3340,
+                 0 0 40px #ed3340,
+                 0 0 80px #ed3340,
+                 0 0 160px #ed3340,
+                 0 0 320px #ed3340,
+                 0 0 640px #ed3340
+  }
+    }
+
+/* Body CSS */
+
+.body__twitch {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.body__twitch iframe {
+  width: 960px;
+  height: 540px;
+}
+
+.body__youtube {
+    margin-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body__youtube iframe {
+    margin: 20px;
+}
+
+.content__splitter {
+  display: flex;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  letter-spacing: 15px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  color: #ed3340;
+}
+
+/* Footer */
+
+.footer__copyright {
+  display: flex;
+  justify-content: center;
+  font-family: 'Bebas Neue', sans-serif;
+  color: #ed3340;
+  letter-spacing: 5px;
+  font-size: 12px;
+  padding-bottom: 10px;
+  opacity: .5;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1024px) {
+
+  .header__logo {
+    width: 96px;
+  }
+
+  .header__links i {
+    font-size: 22px;
+  }
+
+  .header__name {
+    font-size: 60px;
+    height: 100px;
+    letter-spacing: 15px;
+  }
+
+  .body__twitch iframe {
+    width: 640px;
+    height: 320px;
+  }
+
+  .body__youtube {
+    flex-direction: column;
+  }
+
+
+}
+
+@media only screen and (max-width: 540px) {
+
+  .header__logo {
+    width: 64px;
+  }
+
+  .header__links i {
+    font-size: 18px;
+  }
+
+  .header__name {
+    font-size: 55px;
+    height: 50px;
+    letter-spacing: 10px;
+  }
+
+  .body__twitch iframe {
+    width: 480px;
+    height: 240px;
+  }
+
+  .body__youtube {
+    flex-direction: column;
+  }
+
+  .content__splitter {
+    letter-spacing: 10px;
+  }
+
+}
