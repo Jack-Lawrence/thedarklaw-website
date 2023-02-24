@@ -250,9 +250,9 @@
 .news__feed {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   margin-top: 50px;
-  margin-bottom: 50px;
 }
 
 .news__post {
@@ -260,7 +260,8 @@
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
-
+  margin-top: 25px;
+  margin-bottom: 25px;
   width: 700px;
   min-height: 600px;
   border: 4px solid #ed3340;
@@ -277,11 +278,12 @@
   background-color: rgba(20, 20, 20, 0.75)
 }
 
-.news__header .news__social {
+.news__social {
   margin-left: 10px;
   display: flex;
   flex-direction: row;
   justify-content: left;
+  margin-right: 0;
   align-items: center;
 }
 
@@ -307,7 +309,7 @@
 }
 
 .news__header .news__social img {
-  width: 15%;
+  width: 12%;
 }
 
 /*  */
@@ -315,16 +317,15 @@
 /* NEWS TITLE */
 
 .news__title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
+margin-left: 60px;
+text-align: left;
 }
 
 .news__title h2 {
   font-family: 'Bebas Neue', sans-serif;
-  font-weight: 400;
-  font-size: 24px;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
   color: white;
 }
 
@@ -346,6 +347,16 @@
   font-family: 'Bebas Neue', sans-serif;
   color: white;
   font-size: 22px
+}
+
+.news__body h3 {
+  margin: 20px;
+  display: flex;
+  justify-content: left;
+  font-family: 'Bebas Neue', sans-serif;
+  color: #ed3340;
+  letter-spacing: 6px;
+  font-size: 24px;
 }
 
 /* ScrollBar */
