@@ -121,7 +121,7 @@
     text-align: center;
     color: #000;
     position: absolute;
-    margin-left: 10px;
+    margin-left: 6px;
     width: 100%;
     opacity: 20%;
     height: 138px;
@@ -519,7 +519,7 @@ text-align: left;
 
 /* SUPER SMALL PHONES */
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 428px) {
 
   /* Header CSS */
 
