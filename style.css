@@ -22,6 +22,7 @@
     background-color: #000;
     background-size: 40px 40px;
     background-image: radial-gradient(circle, rgba(237, 51, 64, .35) 1px, rgba(0, 0, 0, 1) 1px);
+    background-attachment: fixed;
   }
 
 
