@@ -405,6 +405,7 @@ text-align: left;
 
 }
 
+
 /* Media Queries */
 
 @media only screen and (max-width: 1024px) {
@@ -443,9 +444,9 @@ text-align: left;
     width: 500px;
     height: 300px;
   }
-
-
 }
+
+/* MEDIUM SIZED PHONES */
 
 @media only screen and (max-width: 628px) {
 
@@ -512,6 +513,68 @@ text-align: left;
 
   .news__body p {
     font-size: 18px;
+  }
+
+}
+
+/* SUPER SMALL PHONES */
+
+@media only screen and (max-width: 390px) {
+
+  /* Header CSS */
+
+  .header__logo {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .header__links i {
+    font-size: 18px;
+    margin-right: 8px;
+    margin-left: 8px;
+  }
+
+  .header__name {
+    font-size: 45px;
+    height: 50px;
+    letter-spacing: 10px;
+  }
+
+  .header__nav button {
+    width: 75px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  /* Body CSS */
+
+  .body__twitch iframe {
+    width: 384px;
+    height: 216px;
+  }
+
+  .body__youtube {
+    flex-direction: column;
+  }
+
+  .content__splitter {
+    letter-spacing: 5px
+  }
+
+  /* Panels */
+  .panels .panel {
+    width: 300px;
+    height: 150px;
+  }
+
+  .panel img {
+    width: 30%;
+  }
+
+  /* NEWS */
+
+  .news__title h2 {
+    font-size: 14px;
   }
 
 }
