@@ -104,10 +104,9 @@
     color: white;
     box-shadow: 0 0 5px #ed3340,
                  0 0 10px #ed3340
-
   }
 
-  /* Test */
+/* Header Background */
   .header__name {
     z-index: -1000;
     display: flex;
@@ -157,7 +156,7 @@
 /* Body CSS */
 
 .body__twitch {
-    margin-top: 40px;
+  margin: 20px 20px 20px 20px;
     display: flex;
     align-items: center;
     justify-content: center;  
@@ -177,7 +176,7 @@
 }
 
 .body__youtube iframe {
-    margin: 20px;
+    margin: 0px 20px 20px 20px;
 }
 
 .content__splitter {
@@ -190,6 +189,70 @@
   margin-top: 75px;
   color: #ed3340;
 }
+
+/* Website Player */
+.website__players {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  opacity: 0.5;
+  text-decoration: none;
+  color: black;
+}
+
+.website__players .selected{
+  opacity: 1;
+  color: white;
+ }
+
+.website__players button {
+  all: unset;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  width: 70px;
+  height: 35px;
+  border-radius: 4px;
+  background-color: #ed3340;
+  transition: all 0.3s ease 0s;
+  opacity: 0.5;
+}
+
+.website__players button:hover {
+  color: white;
+  opacity: 1;
+  box-shadow: 0 0 5px #ed3340,
+               0 0 10px #ed3340
+}
+
+#kickButton {
+  background-color: #61CB2B;
+}
+
+#kickButton:hover {
+  color: white;
+  opacity: 1;
+  box-shadow: 0 0 5px #61CB2B,
+               0 0 10px #61CB2B
+}
+
+#twitchButton {
+  background-color: #6441a5;
+}
+
+#twitchButton:hover {
+  color: white;
+  opacity: 1;
+  box-shadow: 0 0 5px #6441a5,
+               0 0 10px #6441a5
+}
+
 
 /* Panels */
 
@@ -445,6 +508,7 @@ text-align: center;
   color: #ed3340;
   letter-spacing: 5px;
   font-size: 12px;
+  margin-top: 20px;
   padding-bottom: 10px;
   opacity: .5;
   width: 100%;

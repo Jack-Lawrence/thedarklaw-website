@@ -19,13 +19,11 @@
                     <p>·</p>
                     <a href="https://www.instagram.com/TheDarkLawTV/" target="_blank"><i class="fa-brands fa-instagram animate__animated animate__fadeInRight animate__delay-1s"></i></a>
                     <p>·</p>
-                    <a href="https://www.tiktok.com/@thedarklawtv" target="_blank"><i class="fa-brands fa-tiktok animate__animated animate__fadeInRight animate__delay-1s"></i></a>
                     <img class="header__logo animate__animated animate__fadeInUp animate__delay" src="images\logo.png">
-                    <a href="https://www.twitch.tv/thedarklaw" target="_blank"><i class="fa-brands fa-twitch animate__animated animate__fadeInLeft animate__delay-1s"></i></a>
+                    <a href="https://www.tiktok.com/@thedarklawtv" target="_blank"><i class="fa-brands fa-tiktok animate__animated animate__fadeInRight animate__delay-1s"></i></a>
                     <p>·</p>
                     <a href="https://twitter.com/TheDarkLawTV" target="_blank"><i class="fa-brands fa-twitter animate__animated animate__fadeInLeft animate__delay-1s"></i></a>
                     <p>·</p>
-                    <a href="https://www.youtube.com/@TheDarkLawTV" target="_blank"><i class="fa-brands fa-youtube animate__animated animate__fadeInLeft animate__delay-1s"></i></a>
                 </div>
                 <div class="header__nav">
                    <a href="index.html" class="selected animate__animated animate__fadeInDown animate__delay-1s"><button>HOME</button></a>
@@ -33,7 +31,15 @@
                    <a href="partners.html" class="animate__animated animate__fadeInDown animate__delay-1s"><button>PARTNERS</button></a>
                    <a href="giveaways.html" class="animate__animated animate__fadeInDown animate__delay-1s"><button>GIVEAWAYS</button></a>
                 </div>
+                
+            <div class="website__players animate__animated animate__fadeIn animate__delay-2s">
+                <button onclick="playerNo(0)" id="kickButton" class="selected"><i class="fa-brands fa-kickstarter-k"></i></button>
+                <button onclick="playerNo(1)" id="twitchButton"><i class="fa-brands fa-twitch"></i></button>
+                <button onclick="playerNo(2)" id="youtubeButton"><i class="fa-brands fa-youtube"></i></button>
+
+            <div>
             </header>
+
             <div class="body__twitch animate__animated animate__fadeIn animate__delay-2s">
                 <div id="twitch-embed"></div>
                 <script src="https://player.twitch.tv/js/embed/v1.js"></script>
@@ -43,18 +49,10 @@
                 });
                 </script>
             </div>
-            <div class="content__splitter animate__animated animate__fadeInUp animate__delay-1s">
-                <p>↓ RECENT VIDEOS BELOW ↓</p>
-            </div>
-            <div class="body__youtube">
-                <iframe class="animate__animated animate__fadeIn animate__delay-1s" style="border:2px solid #ed3340;" src="https://www.youtube.com/embed?listType=playlist&list=UU3rScdAOsBYkg_ieRxca-yg&index=1"></iframe>
-                <iframe class="animate__animated animate__fadeIn animate__delay-1s" style="border:2px solid #ed3340;" src="https://www.youtube.com/embed?listType=playlist&list=UU3rScdAOsBYkg_ieRxca-yg&index=2"></iframe>
-                <iframe class="animate__animated animate__fadeIn animate__delay-1s" style="border:2px solid #ed3340;" src="https://www.youtube.com/embed?listType=playlist&list=UU3rScdAOsBYkg_ieRxca-yg&index=3"></iframe>
-            </div>
 
         </body>
-        <footer>
+        <!-- <footer>
             <p class="footer__copyright">© TheDarklaw</p>
-        </footer>
+        </footer> -->
     </container>
 </html>
